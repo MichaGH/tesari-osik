@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.tesariosik.cz
+Host: https://tesari-osik-zwyn.vercel.app/
 
 # Sitemaps
-Sitemap: https://www.tesariosik.cz/sitemap.xml
+Sitemap: https://tesari-osik-zwyn.vercel.app/sitemap.xml

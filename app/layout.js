@@ -1,4 +1,3 @@
-import Head from "next/head";
 import "./globals.css";
 import localFont from "next/font/local";
 
@@ -53,8 +52,8 @@ const jsonLd = {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Tesaři Osík",
-              image: "https://www.tesariosik.cz/images/hero.jpg",
-              url: "https://www.tesariosik.cz",
+              image: "https://tesari-osik-zwyn.vercel.app/images/hero.jpg",
+              url: "https://tesari-osik-zwyn.vercel.app/",
               telephone: "+420603874860",
               address: {
                 "@type": "PostalAddress",
@@ -73,11 +72,10 @@ export const metadata = {
     verification: {
         google: "ULsrNionUa2Ml_aVIVlcKeBsMHr-BqDBumLxvDjXIoY",
     },
-    manifest: '/manifest.json',
 	openGraph: {
 		title: "Tesaři Osík - Truhlářství a Tesařství",
 		description: "Kvalitní tesařské a truhlářské práce v Osíku a okolí.",
-		url: "https://www.tesariosik.cz",
+		url: "https://tesari-osik-zwyn.vercel.app/",
 		siteName: "Tesaři Osík",
 		images: [
 			{
