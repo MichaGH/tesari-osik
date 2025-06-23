@@ -39,7 +39,6 @@ export default function Navbar({ homepage = false }) {
           
           {/* Logo */}
           <Link href="/" className="flex" >
-            <img src="/images/icons/log-colored.svg" className="h-0" />
             <span className="text-cyan-600  text-shadow-xs text-shadow-white/95 font-extrabold text-4xl font-croissant">
 
             Tesaři Osík
