@@ -7,7 +7,7 @@ return (
       <div>
         <h1 className="text-6xl font-bold text-cyan-700 mb-4">404</h1>
         <p className="text-xl text-gray-700 mb-6">
-          Stránka nenalezena. Možná byla přesunuta nebo neexistuje.
+          Stránka nenalezena. Ješte není dokončena, nebo neexistuje.
         </p>
         <Link
           href="/"

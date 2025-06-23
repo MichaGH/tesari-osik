@@ -44,7 +44,7 @@
     
     /*! WHY WOOD */
     .why-wood-list {
-        @apply flex flex-col md:space-y-8 lg:space-y-2 flex-1 h-full;
+        @apply flex flex-col space-y-10 md:space-y-8 lg:space-y-2 flex-1 h-full;
     }
 
     .why-wood-list li {

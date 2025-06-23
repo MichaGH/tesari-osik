@@ -18,7 +18,7 @@ function Milestones() {
  
 	return (
         
-		<div className="stats-showcase-panel bg-topography border-2 border-[#bc6a3c] lg:w-full w-[60%] mx-auto ">
+		<div className="stats-showcase-panel bg-topography border-2 border-[#bc6a3c] lg:w-full w-[100%] mx-auto ">
             
             
                 <div className="stats-showcase-panel-card card-hover-scale-tl ">

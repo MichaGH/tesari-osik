@@ -7,11 +7,11 @@ function contactPage() {
 			<div className="max-w-7xl mx-auto space-y-20">
 
 				{/* Row 1: Contacts + Form */}
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-de v">
 					
 					{/* LEFT: Contacts */}
-					<div className="space-y-8">
-						<h2 className="text-3xl font-bold text-cyan-700">Rychlý kontakt</h2>
+					<div className="space-y-8 flex flex-col items-center lg:items-start ">
+						<h2 className="text-3xl font-bold text-cyan-700 w-full text-center">Rychlý kontakt</h2>
 
 						<div>
 							<p className="font-semibold">Král Jindřich</p>

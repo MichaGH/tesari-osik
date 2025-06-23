@@ -30,7 +30,7 @@ function Test2() {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
   <Link
-    href="#sluzby"
+    href="/#zamereni"
     className="group inline-flex items-center justify-center bg-cyan-700 text-white px-6 py-3 rounded-lg shadow-xl hover:bg-cyan-600 transition-all duration-300"
   >
     <span className="relative">

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 function ProcessTimeline() {
 	const initialDelay = 0.1;
@@ -80,18 +81,18 @@ function ProcessTimeline() {
 					</div>
 				</div>
 				{/* Right side: CTA */}
-				<div className=" m-16  flex flex-col justify-center items-center bg-cyan-50 rounded-xl shadow-md p-2 text-center">
+				<div className=" sm:m-16 flex flex-col justify-center items-center bg-cyan-50 rounded-xl shadow-md p-2 text-center">
 					<h3 className="text-3xl font-bold text-cyan-700 mb-4">Máte zájem?</h3>
 					<p className="text-gray-700 mb-8 max-w-md">
 						Nečekejte a kontaktujte nás ještě dnes! Rádi s vámi probereme
 						všechny detaily a připravíme individuální nabídku.
 					</p>
-					<button
-						onClick={() => alert("Zavoláme vám brzy!")} // or replace with your real action
+					<Link
+						href="/kontakt"
 						className="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-cyan-300"
 					>
 						Kontaktujte nás
-					</button>
+					</Link>
 				</div>
 			</div>
 		</section>
