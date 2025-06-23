@@ -61,6 +61,7 @@ function ProcessTimeline() {
 										duration: entryOpacDuration,
 									},
 								}}
+                                key={index}
 							>
 								<div className="mb-8 ml-4">
 									<div className="absolute w-3 h-3 bg-cyan-600 rounded-full  -left-1.5 border border-white"></div>
