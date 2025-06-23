@@ -5,22 +5,91 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+@theme {
+    --color-primary: #4AC7D1;
+    --color-secondary: oklch(0.72 0.11 178);
+
+    --font-croissant: var(--font-croissant);
+    --font-montserrat: var(--font-montserrat);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@layer utility {
+    .bg-dev * {
+        background-color: rgba(255, 0, 0, 0.1) !important;
+    }
+    .bg-topography {
+        background-image: url('/images/topography.svg');
+        background-repeat: repeat;
+        background-position: top left;
+        background-size: 500px; /* or specify if you want */
+    }
+
+    .bg-grad-1 {
+        --angle: 45deg; 
+        background: linear-gradient(var(--angle), oklab(72.1% 0.029 0.075), oklab(43.5% 0.054 0.063))
+    }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+    /*! NAVBAR LINK */
+    .navbar-link {
+        @apply text-white hover:text-cyan-500 font-semibold transition;
+    }
+
+    /*! HERO SECTION*/
+    .h-hero {
+        height: calc(100vh - 4rem)
+    }
+    
+    /*! WHY WOOD */
+    .why-wood-list {
+        @apply flex flex-col md:space-y-8 lg:space-y-2 flex-1 h-full;
+    }
+
+    .why-wood-list li {
+        @apply flex space-x-4 xl:space-x-12 flex-1 items-center;
+    }
+
+    .why-wood-icon {
+        @apply w-10 h-10 text-cyan-600 flex-shrink-0 mt-1;
+    }
+
+    .why-wood-item-title {
+        @apply text-xl font-semibold text-gray-800 mb-1;
+    }
+
+    .why-wood-item-desc {
+        @apply text-gray-600;
+    }
+
+    /* Left Panel */
+    .stats-showcase-panel {
+        @apply grid grid-cols-2 gap-2   xl:p-16 lg:p-10 p-6;
+    }
+    /* Cards and text in them */
+    .stats-showcase-panel-card {
+        @apply text-center flex-col flex px-4 justify-center  border-1 border-cyan-500 w-full aspect-square backdrop-blur-xs bg-white/45 backdrop-grayscale
+        hover:scale-110 hover:shadow-2xl transition-all duration-300;       
+    }
+    .stats-showcase-panel-card-title {
+        @apply  text-4xl font-extrabold text-cyan-500;
+    }
+    .stats-showcase-panel-card-text {
+        @apply text-sm text-gray-600 mt-2 font-bold;
+    }
+    /* Transitions for individual cards */
+    .card-hover-scale-tl {
+        @apply origin-bottom-right;
+    }
+    .card-hover-scale-tr {
+        @apply origin-bottom-left;
+    }
+    .card-hover-scale-bl {
+        @apply origin-top-right;
+    }
+    .card-hover-scale-br {
+        @apply origin-top-left;
+    }
+
 }

@@ -1,15 +1,54 @@
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
+import localFont from "next/font/local";
+import Navbar from "@/components/layout/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const croissantOne = localFont({
+    src: [
+        {
+            path: "../fonts/CroissantOne-Regular.ttf",
+            weight: "400",
+            style: "normal"
+        }
+    ],
+    variable: '--font-croissant',
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const montserrat = localFont({
+    src: [
+        {
+            path: "../fonts/Montserrat-Thin.ttf",
+            weight: "100",
+            style: "thin"
+        },
+        {
+            path: "../fonts/Montserrat-Light.ttf",
+            weight: "300",
+            style: "light"
+        },
+        {
+            path: "../fonts/Montserrat-Regular.ttf",
+            weight: "400",
+            style: "normal"
+        },
+        {
+            path: "../fonts/Montserrat-Italic.ttf",
+            weight: "400",
+            style: "italic"
+        },
+        {
+            path: "../fonts/Montserrat-SemiBold.ttf",
+            weight: "600",
+            style: "semibold"
+        },
+        {
+            path: "../fonts/Montserrat-Bold.ttf",
+            weight: "800",
+            style: "bold"
+        },
+    ],
+    variable: '--font-montserrat',
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -20,7 +59,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${croissantOne.variable} ${montserrat.variable}`}
+            
       >
         {children}
       </body>
