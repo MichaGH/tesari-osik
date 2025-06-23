@@ -67,7 +67,7 @@ const jsonLd = {
 }
 
 export const metadata = {
-	title: "Tesaři Osík – Truhlářství a Tesařství",
+	title: "Tesaři Osík - Truhlářství a Tesařství",
 	description: "Specializujeme se na kvalitní tesařské a truhlářské práce.",
     verification: {
         google: "ULsrNionUa2Ml_aVIVlcKeBsMHr-BqDBumLxvDjXIoY",
